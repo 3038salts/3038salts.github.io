@@ -3,9 +3,16 @@
     src: url(../assets/quicksand/quicksand.ttf)
     /* Google font by Andrew Paglinawan */
 }
+html {
+    height: 100%;
+}
 body {
     background-color: #d0e9f2;
     margin: 0px;
+}
+body.home {
+    display: flex;
+    flex-direction: column;
 }
 .navigationbar {
     background-color: #afd4e7;
@@ -56,7 +63,6 @@ h1.title {
     margin-bottom: -3.5%;
 }
 div.intro {
-    margin-right: 5%;
     margin-left: 5%;
     align-items: center;
     display: flex;
@@ -97,6 +103,31 @@ div.collage {
     grid-gap: 20px;
     margin-left: 11%;
 }
+p.desc {
+    margin-left: 5%;
+    margin-right: auto;
+    font-size: 18px;
+}
+footer{
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 100%;
+    width: 100%;
+    clear: both;
+    align-items: center;
+    height: 100px;
+    width: 100%;
+    margin-top: auto;
+    flex: 0 0 50px;
+}
+p.footertext{
+    padding-left: 10px;
+}
+/* Images */
 img#panda {
     display: inline-block;
     margin-left: 5%;
@@ -143,8 +174,26 @@ img#hotcocoa {
     border-radius: 10%;
     margin-bottom: 2%;
 }
-p.desc {
-    margin-left: 5%;
+img#fallingwater {
+    display: inline-block;
+    margin-left: 4.5%;
     margin-right: auto;
-    font-size: 18px;
+    max-width: 30%;
+    height: auto;
+    border-radius: 10%;
+}
+img#camera {
+    display: inline-block;
+    margin-left: 3%;
+    margin-right: 3%;
+    max-width: 27%;
+    height: auto;
+    border-radius: 10%;
+}
+img#editing {
+    display: inline-block;
+    max-width: 28%;
+    height: auto;
+    border-radius: 10%;
+    margin-bottom: 2%;
 }
